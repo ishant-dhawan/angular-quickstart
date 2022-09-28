@@ -13,14 +13,16 @@
           pageName: 'Home Page'
         }
       },
-      user: {
-        profile: [{ 
-          attributes: { 
-            username: 'testUser',
-            loggedIn: true
-          } 
-        }]
-      }
+      user: [
+        {
+          profile: [{ 
+            attributes: { 
+              username: 'testUser',
+              loggedIn: true
+            } 
+          }]
+        }
+      ]
     };
   window.targetGlobalSettings = {  
    cookieDomain: location.hostname // set cookies on the subdomain
