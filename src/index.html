@@ -8,14 +8,22 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script>
   var digitalData = {
-            page:{
-                pageInfo: {
-                  pageName: 'Home Page'
-                }
-              }
-  };
+      page:{
+        pageInfo: {
+          pageName: 'Home Page'
+        }
+      },
+      user: {
+        profile: [{ 
+          attributes: { 
+            username: 'testUser',
+            loggedIn: true
+          } 
+        }]
+      }
+    };
   window.targetGlobalSettings = {  
-   cookieDomain: 'fantastic-angular-test.netlify.app' // set cookies on the subdomain
+   cookieDomain: location.hostname // set cookies on the subdomain
   };
   </script>
   <script>
